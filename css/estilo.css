@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    align-self: hover;
+    float:left;
+    width:10%;
+    padding:5px 15px;
+    background-color:none;
+    border:none;
+    text-align:center;
+    
+    }
+
+    .seleccion{
+        background-color: azure;
+    }
+    .segundaSeccion{
+        font-family: 'Roboto', sans-serif;
+    text-align: left;
+    
+   
+        }
+        main {
+            clear:both
+           
+        }
+        .terceraSeccion{
+            font-family: 'Roboto', sans-serif;
+            margin-top: 50px;
+
+        }
+ /*Le sacamos el puntito al lado onda word */
+li {
+    list-style-type: none;
+ 
+}
+/* le sacamos esa onda hipervinculo de los noventa*/
+a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/*le damos onda a los h1, fuente, alineacion, tamaño y color*/
+@keyframes texto {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+ h1 {
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-iteration-count: 1; 
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    margin: 30px 20px;
+text-align:justify;
+}
+/* le damos onda a los h2, fuente, alineacion y tamaño */
+h2 {
+    /* p{
+        margin: 10px 20px;
+    text-align:justify;
+} */
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size:2rem;
+    margin-top: 80px;
+}
+/* p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size:1.4rem;
+} */
+ul {
+    font-family: 'Roboto', sans-serif;
+    font-size:1rem;
+   justify-content: center;
+}
+
+/*hacemos casas de cemento, le mando background de cemento gris*/
+body{
+    background: #BBD2C5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    
+    
+}
+footer{
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    color: white;
+    border-top: white 2px solid;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/*Slider y que salga lo que dios mande*/
+#Slider{
+ font-family: sans-serif;
+ margin: auto;
+ background-color: none;
+ max-width: 800px;
+ max-height: 500px;
+ width: 100%;
+ padding: 50px;
+ box-sizing: border-box;
+}
+
+#Slider > ul, li {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+
+#Slider > ul.slider{
+ position: relative;
+ max-width: 800px;
+ width: 100%;
+ height: 300px;
+}
+
+#Slider > ul.slider h1{
+ position: absolute;
+ background-color: rgba(255, 255, 255, 0.6);
+ padding: 10px;
+ left: 50%;
+ top: 100px;
+ transform: translate(-50%, -50%);
+}
+
+#Slider > ul.slider li {
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   opacity: 0;
+   width: inherit;
+   height: inherit;
+   transition: opacity .5s;
+   background:#fff;
+}
+
+#Slider > ul.slider li img{
+ width: 100%;
+ height: 300px;
+ object-fit: cover;
+}
+
+#Slider > ul.slider li:first-child {
+   opacity: 1; /*Mostramos el primer <li>*/
+}
+
+#Slider > ul.slider li:target {
+   opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+#Slider > .menu{
+ text-align: center;
+ margin: 20px;
+}
+
+#Slider > .menu li{
+ display: inline-block;
+ text-align: center;
+}
+
+#Slider > .menu li a{
+ display: inline-block;
+ color: white;
+ text-decoration: none;
+ background-color: grey;
+ padding: 10px;
+ width: 20px;
+ height: 20px;
+ font-size: 20px;
+ border-radius: 100%;
+}
