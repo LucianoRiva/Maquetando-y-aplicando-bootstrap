@@ -13,6 +13,7 @@ nav li{
     text-align:center;
     
     }
+ 
 
     .seleccion{
         background-color: azure;
@@ -60,6 +61,7 @@ a {
     text-align: center;
     font-size: 4rem;
     color: white;
+    padding: 100px;
 }
 
 p{
@@ -73,25 +75,31 @@ h2 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size:2rem;
-    margin-top: 100px;
+    margin-top: 50px;
+    padding: 30px;
 }
 
+h3{
+    margin: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size:2rem;
+    margin-top: 100px;
+    padding: 30px;
+}
 ul {
     font-family: 'Roboto', sans-serif;
     font-size:1rem;
    justify-content: center;
 }
 
-/*hacemos casas de cemento, le mando background de cemento gris*/
+/*Background gradiente*/
 body{
     background: #BBD2C5;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
 
-
-    
-    
-}
 footer{
     flex-direction: row;
     height: 100px;
@@ -109,7 +117,7 @@ footer{
  margin: auto;
  background-color: none;
  max-width: 1000px;
- max-height: 800px;
+ max-height: 900px;
  width: 100%;
  padding: 50px;
  box-sizing: border-box;
